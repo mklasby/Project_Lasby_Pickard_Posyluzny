@@ -4,11 +4,10 @@ public class Converter {
 	/*
 	 * @Authors: Mike Lasby, Joshua Posyluzny, Patrick Pickard
 	 */
-	
+
 	// COMMENT - Patrick Pickard: This is the development branch
-	
-	private double celsiusToFahrenheit(double C)
-	{
+
+	private double celsiusToFahrenheit(double C) {
 		double fahrenheit;
 		fahrenheit = (C * (1.8)) + 32.0;
 		return fahrenheit;
@@ -17,17 +16,16 @@ public class Converter {
 	private double fahrenheitToCelsius(double F) {
 		double celsius = 0;
 		double fahrenheit = F;
-		celsius = ((fahrenheit - 32.0)*(5.0/9.0));
+		celsius = ((fahrenheit - 32.0) * (5.0 / 9.0));
 		return celsius;
 	}
 
-	private double kilometersToMiles(double k)
-	{
+	private double kilometersToMiles(double k) {
 		double miles;
 		miles = 0.6214 * k;
 		return miles;
 	}
-	
+
 	public static void main(String[] args) {
 
 		Converter conv = new Converter();
@@ -38,7 +36,7 @@ public class Converter {
 		double cels = 180;
 		double cToF = conv.celsiusToFahrenheit(cels);
 		System.out.printf("%.2f degrees C is %.2f degrees F\n", cels, cToF);
-
+		System.out.printf("%.2f kilometers is %.2f miles\n", 30.0, conv.kilometersToMiles(30));
 	}
 
 }
