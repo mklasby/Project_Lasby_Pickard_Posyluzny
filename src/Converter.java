@@ -8,6 +8,8 @@ public class Converter {
 	 * 
 	 */
 	
+	double celsius;
+	
 	private double celsiusToFahrenheit(double C)
 	{
 		// TODO: THe third student will implement this method
@@ -16,9 +18,8 @@ public class Converter {
 	
 	private double fahrenheitToCelsius(double F)
 	{
-		double celsius = 0;
 		double fahrenheit = F;
-		celsius = ((fahrenheit - 32)*(5/9));
+		celsius = ((F - 32)*(5.0/9.0));
 		return celsius;
 	}
 	
