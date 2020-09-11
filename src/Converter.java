@@ -21,6 +21,13 @@ public class Converter {
 		return celsius;
 	}
 
+	private double kilometersToMiles(double k)
+	{
+		double miles;
+		miles = 0.6214 * k;
+		return miles;
+	}
+	
 	public static void main(String[] args) {
 
 		Converter conv = new Converter();
@@ -31,6 +38,7 @@ public class Converter {
 		double cels = 180;
 		double cToF = conv.celsiusToFahrenheit(cels);
 		System.out.printf("%.2f degrees C is %.2f degrees F\n", cels, cToF);
+
 	}
 
 }
