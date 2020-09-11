@@ -5,6 +5,8 @@ public class Converter {
 	 * @Authors: Mike Lasby, Joshua Posyluzny, Patrick Pickard
 	 */
 	
+	// COMMENT - Patrick Pickard: This is the development branch
+	
 	private double celsiusToFahrenheit(double C)
 	{
 		double fahrenheit;
